@@ -13,10 +13,42 @@ body, p, h1, h2, h3, h4, h5 {
 
 /* ---Mobile Library Grid Styles--- */
 
- .grid-con { 
+.box{
+   place-self: stretch;
+   background-color: #9a2018;
+  }
+
+.box2{
+   place-self: stretch;
+   background-color: #E8E7E7;
+}
+
+.grid-con { 
    display: grid;
    grid-template-columns: repeat(4, 73px);
    column-gap: 30px;
+   max-width: 382px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.grid-row { 
+   display: grid;
+   grid-auto-rows: 30px;
+   row-gap: 17px;
+   max-width: 382px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.grid-con-row { 
+   display: grid;
+   grid-template-columns: repeat(4, 73px);
+   column-gap: 30px;
+   grid-auto-rows: 30px;
+   row-gap: 17px;
    max-width: 382px;
    margin: 0 auto;
    padding-left: 15px;
@@ -34,3 +66,12 @@ body, p, h1, h2, h3, h4, h5 {
 .col-start-2	{grid-column-start: 2;}
 .col-start-3	{grid-column-start: 3;}
 .col-start-4	{grid-column-start: 4;}
+
+.row-1 {grid-row-start:  1;}
+.row-2 {grid-row-start:  2;}
+.row-3 {grid-row-start:  3;}
+.row-4 {grid-row-start:  4;}
+.row-5 {grid-row-start:  5;}
+.row-6 {grid-row-start:  6;}
+.row-7 {grid-row-start:  7;}
+
