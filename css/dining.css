@@ -1,17 +1,25 @@
+#hero_dining {
+    background: url(../images/mobile_dining_page_1.jpg) no-repeat;
+    height: 217px;
+ }
+
 #dining_menu ul,#dining_menu ul li{
-    list-style-type: none;
     font-size: 8px;
     text-align: left;
     align-items: center;
     padding: 0px;
 }
 
-#dining_menu ul li{
-    
+li{
+    list-style-type: none;  
 }
 
 .bold{
     font-weight: bold;
+}
+
+#dining_menu ul li{
+    padding-left: 4px;
 }
 
 
@@ -28,4 +36,47 @@
     display: flex;
     justify-content: left;
     align-items: center;
+}
+
+#dining_img3{
+    background-image: url(../images/mobile_dining_page_3.jpg);
+    height: 210px;
+    background-repeat: no-repeat;
+    grid-row-start:  1;
+}
+
+#dining_img3_side{
+    background-color: #9a2018;
+    width: 8px;
+    height: 210px;
+    place-self: end;
+    grid-row-start:  1;
+}
+
+/*--menu detail*/
+
+#menu_detail{
+    padding: 30px 0;
+}
+
+#menu_detail ul li:nth-child(odd){
+    background-color: #E8E7E7;
+    height: 30px;
+    align-items: center;
+}
+
+#menu_detail ul{
+    font-size: 8px;
+    align-items: center;
+    padding: 0px;
+}
+
+#menu_detail ul li{
+    display: flex;
+    padding-left: 5px;
+}
+
+#menu_detail ul li::before{
+    content: "\25B6";
+    padding-right: 5px;
 }

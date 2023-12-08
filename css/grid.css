@@ -43,6 +43,16 @@ body, p, h1, h2, h3, h4, h5 {
    padding-right: 15px;
 }
 
+.grid-row-dining { 
+   display: grid;
+   grid-auto-rows: 30px;
+   row-gap: 0px;
+   max-width: 382px;
+   margin: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
 .grid-con-row { 
    display: grid;
    grid-template-columns: repeat(4, 73px);
