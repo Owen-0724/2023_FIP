@@ -2,3 +2,50 @@
     background: url(../images/mobile_dining_room.jpg)no-repeat;
     height: 217px;
 }
+
+p{
+    font-size: 14px;
+}
+
+#hero_hotel{
+    background: url(../images/mobile_hotel_room.jpg)no-repeat;
+    height: 217px;
+}
+
+/*--bonuses*/
+
+ol{
+    padding: 0;
+    margin: 0;
+}
+
+/*--list number--*/
+
+ol {
+    list-style: none; 
+    counter-reset: li
+}
+
+li::before {
+    content: counter(li); 
+    color: #9a2018;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em; 
+    text-align: right; 
+    direction: rtl;
+    
+    font-size: 12px;
+}
+
+li {
+    counter-increment: li
+}
+
+/*--EQUIPMENT--*/
+
+#hero_equip{
+    background: url(../images/mobile_sports_equipment.jpg)no-repeat;
+    height: 217px;
+}
