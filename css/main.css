@@ -359,6 +359,10 @@ input, textarea {
    align-self: end;
 }
 
+.heading-box {
+   align-self: end;
+}
+
 #contact-hero-text {
    margin-top: 15px;
    margin-bottom: 25px;
