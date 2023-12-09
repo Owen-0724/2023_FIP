@@ -1,1 +1,5 @@
 This folder will be used for CSS files.
+main.css
+grid.css
+dining.css
+package.css
