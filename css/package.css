@@ -21,12 +21,12 @@ ol{
 
 /*--list number--*/
 
-ol {
+#bonuses ol {
     list-style: none; 
     counter-reset: li
 }
 
-li::before {
+#bonuses li::before {
     content: counter(li); 
     color: #9a2018;
     display: inline-block; 
@@ -39,7 +39,7 @@ li::before {
     font-size: 12px;
 }
 
-li {
+#bonuses li {
     counter-increment: li
 }
 
@@ -48,4 +48,54 @@ li {
 #hero_equip{
     background: url(../images/mobile_sports_equipment.jpg)no-repeat;
     height: 217px;
+}
+
+/*--tab-*/
+
+.container {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+
+  
+.tab-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+    transition: .3s;
+    opacity: 0.5;
+}
+  
+.tab-toggle {
+    display: none;
+}
+  
+.tab-content {
+    display: none;
+}
+  
+.tab-toggle:nth-child(1):checked ~ .tab-list .tab-item:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-list .tab-item:nth-child(2) {
+    opacity: 1;
+}
+
+.tab-toggle:nth-child(1):checked ~ .tab-container .tab-content:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-container .tab-content:nth-child(2) {
+  display: block;
+}
+
+.tab-trigger {
+  display: block;
+  padding: 10px 0;
+}
+
+.tab-container {
+  padding: 15px 30px;
 }
