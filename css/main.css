@@ -413,7 +413,11 @@ input, textarea {
 
 #contact-hero-form input[type="submit"]:hover {
    background-color: #626262;
-   border-radius: 0;
+   border-radius: 20px;
+}
+
+#contact-hero-form input[type="submit"]:checked ~ .lightbox:target{
+   display: block;
 }
 
 
@@ -453,4 +457,49 @@ input, textarea {
 
 #burger-con ul li:hover a{
    color: #9a2018;
+}
+
+/*--lightbox--*/
+
+.lightbox{
+   width: 382px;
+   height: 500px;
+   
+   background-color: white;
+   z-index: 5000;
+   display: none;
+}
+
+.lightbox article{
+   color: #707070;
+   text-align: left;
+   font-size: 12px;
+
+}
+
+.lightbox:target{  
+   display: block;
+}
+
+.lightbox_close{
+   position: relative;
+   top: 0px;
+   left: 95%;
+   color: black;
+   font-size: 30px;
+   text-decoration: none;
+   font-weight: bolder;
+}
+
+.lightbox_close:hover{
+   opacity: 0.5;
+   color: red;
+}
+
+#sand_box{
+   justify-self: right;
+   align-self: flex-end;
+   height: 40px;
+   width: 120px;
+
 }
