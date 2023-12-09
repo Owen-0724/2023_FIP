@@ -1,0 +1,122 @@
+#hero_package{
+    background: url(../images/mobile_dining_room.jpg)no-repeat;
+    height: 217px;
+}
+
+p{
+    font-size: 14px;
+}
+
+#hero_hotel{
+    background: url(../images/mobile_hotel_room.jpg)no-repeat;
+    height: 217px;
+}
+
+/*--bonuses*/
+
+ol{
+    padding: 0;
+    margin: 0;
+}
+
+/*--list number--*/
+
+#bonuses ol {
+    list-style: none; 
+    counter-reset: li
+}
+
+#bonuses li::before {
+    content: counter(li); 
+    color: #9a2018;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em; 
+    text-align: right; 
+    direction: rtl;
+    
+    font-size: 12px;
+}
+
+#bonuses li {
+    counter-increment: li
+}
+
+/*--EQUIPMENT--*/
+
+#hero_equip{
+    background: url(../images/mobile_sports_equipment.jpg)no-repeat;
+    height: 217px;
+}
+
+.line-separator-0{
+    margin-top: 0px;
+    border-top: solid 3px #CF6666;
+    padding-top: 0px;
+}
+
+/*--tab-*/
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+  
+.tab-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #E8E7E7;
+    color: #626262;
+    
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+    transition: .3s;
+    opacity: 1;
+}
+  
+.tab-toggle {
+    display: none;
+}
+  
+.tab-content {
+    display: none;
+}
+  
+.tab-toggle:nth-child(1):checked ~ .tab-list .tab-item:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-list .tab-item:nth-child(2) {
+    opacity: 1;
+    background-color: #9a2018;
+    color: white;
+}
+
+.tab-toggle:nth-child(1):checked ~ .tab-container .tab-content:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-container .tab-content:nth-child(2) {
+  display: block;
+}
+
+.tab-trigger {
+  display: block;
+  padding: 10px 0;
+}
+
+.tab-container {
+  padding: 20px 0;
+}
+
+/*--tab hover--*/
+
+.tab-item:hover{
+    opacity: .6;
+    background-color: #9a2018;
+    color: white;
+}

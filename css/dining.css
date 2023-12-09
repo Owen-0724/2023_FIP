@@ -1,0 +1,119 @@
+#hero_dining {
+    background: url(../images/mobile_dining_page_1.jpg) no-repeat;
+    height: 217px;
+ }
+
+#dining_menu ul,#dining_menu ul li{
+    font-size: 8px;
+    text-align: left;
+    align-items: center;
+    padding: 0px;
+}
+
+li{
+    list-style-type: none;  
+}
+
+
+
+#dining_menu ul li{
+    padding-left: 4px;
+}
+
+
+.menu_1{
+    background-color: #9a2018;
+    color: white;    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.menu_2{
+    background-color: #E8E7E7;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#dining_img3{
+    background: url(../images/mobile_dining_page_3.jpg) no-repeat;
+    height: 210px;
+    grid-row-start:  1;
+}
+
+#dining_img3_side{
+    background-color: #9a2018;
+    width: 8px;
+    height: 210px;
+    place-self: end;
+    grid-row-start:  1;
+}
+
+/*--menu detail*/
+
+#menu_detail{
+    padding: 30px 0;
+}
+
+#menu_detail ul li:nth-child(odd){
+    background-color: #E8E7E7;
+    height: 30px;
+    align-items: center;
+}
+
+#menu_detail ul{
+    font-size: 8px;
+    align-items: center;
+    padding: 0px;
+}
+
+#menu_detail ul li{
+    display: flex;
+    padding-left: 5px;
+}
+
+#menu_detail ul li::before{
+    content: "\25B6";
+    padding-right: 5px;
+}
+
+/*--meal wine*/
+
+#meals_wine{
+    background: url(../images/mobile_dining_page_2.jpg) no-repeat;
+    height: 217px;
+}
+
+.meals_wine_text h3{
+    font-size: 8px;
+    color: white;
+    background-color: #9a2018;
+    height: 30px ;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.meals_wine_text p{
+    font-size: 12px;
+    padding: 30px 0;
+}
+
+#dining_img4{
+    background: url(../images/mobile_dining_page_4.jpg)no-repeat;
+    height: 217px;
+}
+
+#dining_img4_text{
+    height: 30px ;
+    font-size: 8px;
+    color: white;
+    
+    background-color: #9a2018;
+    display: flex;
+    align-self: flex-end;
+    place-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
