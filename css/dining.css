@@ -117,3 +117,9 @@ li{
     text-align: center;
     padding: 0 10px;
 }
+
+/*--animations--*/
+
+#menu_detail ul li:hover{
+    color: #9a2018;
+}

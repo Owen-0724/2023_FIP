@@ -149,7 +149,7 @@ input, textarea {
 .hero-img-h2, .hero-img-h3 {
    background: rgb(255, 255, 255);
    padding: 10px 15px;
-   font-size: 14px;
+   font-size: 16px;
 }
 
 .hero-img-h2 span,  .hero-img-h3 span {
@@ -447,4 +447,10 @@ input, textarea {
    margin-bottom: 20px;
    line-height: 18px;
    font-size: 11px;
+}
+
+/*--animations--*/
+
+#burger-con ul li:hover a{
+   color: #9a2018;
 }
